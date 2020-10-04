@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        tools:context=".SensorDataToGatewayAndConfirm">
+
+        <TextView
+            android:id="@+id/securechannel_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Sending Patient Sensor Readings to Gateway..."
+            android:textColor="#042A49"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/howIsConnected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#2196F3"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+
+        <TextView
+            android:id="@+id/p_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Patient Readings:"
+            android:textColor="#2196F3"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/pdata_encrypted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Encrypted Patient Readings:"
+            android:textColor="#2196F3"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/pdata_signature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Patient Readings Signature:"
+            android:textColor="#2196F3"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/fromgateway_msg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Gateway Sending Data to Server..."
+            android:textColor="#042A49"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+
+        <TextView
+            android:id="@+id/fromserver_msg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="From Health Care Server"
+            android:textColor="#042A49"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/server_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text=""
+            android:textColor="#3F51B5"
+            android:textStyle="bold|italic" />
+
+
+
+    </LinearLayout>
+</ScrollView>

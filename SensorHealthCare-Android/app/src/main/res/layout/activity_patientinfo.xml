@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        tools:context=".PatientInfo">
+
+        <TextView
+            android:id="@+id/securechannel_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Patient Information"
+            android:textColor="#042A49"
+            android:textSize="24sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+
+        <TextView
+            android:id="@+id/pid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Patient ID: SHC16565"
+            android:textColor="#045307"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/pname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Patient Name: PersonM"
+            android:textColor="#045307"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Age: 45"
+            android:textColor="#045307"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/pproblem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Problem: Heart Related"
+            android:textColor="#045307"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/pdoctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Doctor: Dr. DoctorY"
+            android:textColor="#045307"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/plastvisit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Last Visit: 30-04-2020"
+            android:textColor="#045307"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/monitorData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8BC34A"
+            android:layout_marginTop="10dp"
+            android:onClick="payBill"
+            android:text="Start Sensor Monitoring"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
